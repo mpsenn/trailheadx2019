@@ -1,0 +1,17 @@
+{
+  "name": "trailheadx2019",
+  "version": "1.0.0",
+  "description": "Live Controller demo presented at TDX 2019",
+  "scripts": {
+    "deploy": "sfdx force:mdapi:deploy --wait 5 -u tdx --deploydir=src",
+    "retrieve": "sfdx force:mdapi:retrieve -r . --wait 5 -u tdx -p Donation"
+  },
+  "keywords": [
+    "tdx",
+    "salesforce",
+    "visualforce",
+    "lightning"
+  ],
+  "author": "msenn@salesforce.com",
+  "license": "ISC"
+}

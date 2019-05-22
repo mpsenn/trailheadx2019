@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Donation_Site_Volunteer_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>My_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>My_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Address__c</fields>
+        <fields>Priority__c</fields>
+        <fields>Scheduled_Volunteers__c</fields>
+        <label>My Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activities__c</fullName>
+        <externalId>false</externalId>
+        <label>Activities</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Community Center Restorations</fullName>
+                    <default>false</default>
+                    <label>Community Center Restorations</label>
+                </value>
+                <value>
+                    <fullName>Host Community Events</fullName>
+                    <default>false</default>
+                    <label>Host Community Events</label>
+                </value>
+                <value>
+                    <fullName>Reading w/ Students</fullName>
+                    <default>false</default>
+                    <label>Reading w/ Students</label>
+                </value>
+                <value>
+                    <fullName>Afterschool Activities</fullName>
+                    <default>false</default>
+                    <label>Afterschool Activities</label>
+                </value>
+                <value>
+                    <fullName>School Supplies &amp; Textbooks</fullName>
+                    <default>false</default>
+                    <label>School Supplies &amp; Textbooks</label>
+                </value>
+                <value>
+                    <fullName>Tutoring</fullName>
+                    <default>false</default>
+                    <label>Tutoring</label>
+                </value>
+                <value>
+                    <fullName>Beach Cleanup</fullName>
+                    <default>false</default>
+                    <label>Beach Cleanup</label>
+                </value>
+                <value>
+                    <fullName>Community Cleanup</fullName>
+                    <default>false</default>
+                    <label>Community Cleanup</label>
+                </value>
+                <value>
+                    <fullName>Proper Waste Disposal Awareness</fullName>
+                    <default>false</default>
+                    <label>Proper Waste Disposal Awareness</label>
+                </value>
+                <value>
+                    <fullName>Blood Drive</fullName>
+                    <default>false</default>
+                    <label>Blood Drive</label>
+                </value>
+                <value>
+                    <fullName>Homeless shelter</fullName>
+                    <default>false</default>
+                    <label>Homeless shelter</label>
+                </value>
+                <value>
+                    <fullName>Food bank</fullName>
+                    <default>false</default>
+                    <label>Food bank</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Community</controllingFieldValue>
+                <valueName>Community Center Restorations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Community</controllingFieldValue>
+                <valueName>Host Community Events</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Reading w/ Students</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Afterschool Activities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>School Supplies &amp; Textbooks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <valueName>Tutoring</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Environment</controllingFieldValue>
+                <valueName>Beach Cleanup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Environment</controllingFieldValue>
+                <valueName>Community Cleanup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Environment</controllingFieldValue>
+                <valueName>Proper Waste Disposal Awareness</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Health</controllingFieldValue>
+                <valueName>Blood Drive</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Poverty</controllingFieldValue>
+                <valueName>Homeless shelter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Poverty</controllingFieldValue>
+                <valueName>Food bank</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Scheduled_Event__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Scheduled Event</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>No_Show_Volunteers__c</fullName>
+        <externalId>false</externalId>
+        <label>No Show Volunteers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>true</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Scheduled_Volunteers__c</fullName>
+        <externalId>false</externalId>
+        <label>Scheduled Volunteers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Donated_All_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Amount Donated (All-Time)</label>
+        <summarizedField>Donation__c.Amount__c</summarizedField>
+        <summaryForeignKey>Donation__c.Donation_Site__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Area Of Focus</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Community</fullName>
+                    <default>false</default>
+                    <label>Community</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Environment</fullName>
+                    <default>false</default>
+                    <label>Environment</label>
+                </value>
+                <value>
+                    <fullName>Health</fullName>
+                    <default>false</default>
+                    <label>Health</label>
+                </value>
+                <value>
+                    <fullName>Poverty</fullName>
+                    <default>false</default>
+                    <label>Poverty</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Walk_in_Volunteers__c</fullName>
+        <externalId>false</externalId>
+        <label>Walk-in Volunteers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Donation Site</label>
+    <listViews>
+        <fullName>Active_Donation_Sites</fullName>
+        <columns>NAME</columns>
+        <columns>Priority__c</columns>
+        <columns>Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Active Donation Sites</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Site Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Donation Sites</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

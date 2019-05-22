@@ -1,0 +1,43 @@
+<apex:page controller="DonationsController">
+
+    <!-- <apex:liveController /> -->
+
+    <div style="border: dashed orange;">
+
+        <div style="height:600px; width:100%">
+            <apex:map height="100%" 
+                width="100%"
+                scrollBasedZooming="false">
+                
+                <apex:repeat value="{! highPriority}" var="site">
+                    <apex:mapMarker title="{! site.Name }"
+                        position="{!site.Address__c}"
+                        icon="{! URLFOR($Resource.donation, 'donation/red-pushpin.png')}"/>
+                </apex:repeat>  
+
+                <apex:repeat value="{! mediumPriority}" var="site">
+                    <apex:mapMarker title="{! site.Name }"
+                        position="{!site.Address__c}"
+                        icon="{! URLFOR($Resource.donation, 'donation/ylw-pushpin.png')}"/>
+                </apex:repeat>  
+
+                <apex:repeat value="{! lowPriority}" var="site">
+                    <apex:mapMarker title="{! site.Name }"
+                        position="{!site.Address__c}"
+                        icon="{! URLFOR($Resource.donation, 'donation/grn-pushpin.png')}"/>
+                </apex:repeat>  
+                
+            </apex:map>
+        </div>
+        
+        <apex:pageBlock title="All sites">
+            <apex:pageBlockTable value="{! activeSites}" var="item">
+                <apex:column value="{!item.name}"/>
+                <apex:column value="{!item.Priority__c}"/>
+                <apex:column value="{!item.Address__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+
+    </div>
+
+</apex:page>

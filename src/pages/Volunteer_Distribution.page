@@ -1,0 +1,13 @@
+<apex:page standardController="Donation_Site__c" extensions="DonationSiteExtension" lightningStylesheets="true">
+
+    <!-- <apex:liveController action="{! resetMe}"/> -->
+
+    <div style="border: dashed orange; height: 300px;">
+
+        <apex:chart height="100%" width="100%" data="{!pieData}" animate="false" resizable="false">
+            <apex:pieSeries dataField="data" labelField="name"/>
+            <apex:legend position="right"/>
+        </apex:chart>
+
+    </div>
+</apex:page>
